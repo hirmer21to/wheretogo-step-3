@@ -8,11 +8,9 @@ import { Lecture } from '../shared/lecture';
   styles: []
 })
 export class LectureItemComponent implements OnInit {
-  @Input() lecture: Lecture;
+  @Input() lecture: Lecture | undefined;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
